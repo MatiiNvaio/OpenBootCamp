@@ -20,6 +20,6 @@ public class CocheBuilder {
     }
 
     public Vehiculo build(){
-        return this.vehiculo;
+        return vehiculo;
     }
 }
