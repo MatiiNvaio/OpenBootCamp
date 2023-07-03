@@ -8,11 +8,14 @@ public class LamparaInglesa {
     public void turnOn(int voltage){
         poweredOn = true;
         this.voltage = voltage;
+        System.out.println("Lampara inglesa poweredOn with "+voltage+" of current");
     }
 
     public  void turnOff(){
         poweredOn = false;
         voltage = 0;
+        System.out.println("Lampara inglesa poweredOff");
+
     }
 
     public boolean isPoweredOn(){
