@@ -21,10 +21,15 @@ public class Main {
 
         Aplicacion app = Aplicacion.getInstance();  // new Aplicacion()
         Aplicacion app2 = Aplicacion.getInstance();  // app2 = app
-        app.Run();
-        app2.Run();
+        Aplicacion app3 = Aplicacion.getInstance();  // app2 = app
 
-        System.out.println(app+" "+app2);
+        app.mensaje();
+        app2.mensaje();
+
+        //app.Run();
+        //app2.Run();
+
+        System.out.println(app+" "+app2+" "+app3);
 
     }
 }

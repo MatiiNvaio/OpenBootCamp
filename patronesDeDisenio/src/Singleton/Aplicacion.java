@@ -21,4 +21,12 @@ public class Aplicacion {
             System.out.println("Ya estaba en ejecución");
         }
     }
+
+    public void mensaje(){
+        if(!isRunning){
+            isRunning = true;
+        }else{
+            System.out.println("Esto se va a mostrar una sola vez");
+        }
+    }
 }

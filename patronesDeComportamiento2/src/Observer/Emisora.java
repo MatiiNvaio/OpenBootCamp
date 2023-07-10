@@ -4,14 +4,14 @@ import java.util.ArrayList;
 
 public class Emisora {
 
-    private ArrayList<Receptor> receptor = new ArrayList<>();
+    private ArrayList<Receptor> receptores = new ArrayList<>();
 
     public void meteReceptor(Receptor receptor){
-        this.receptor.add(receptor);
+        receptores.add(receptor);
     }
 
     public void emite(){
-        for(Receptor receptor : receptor){
+        for(Receptor receptor : receptores){
             receptor.recibe();
         }
     }
