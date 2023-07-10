@@ -21,6 +21,13 @@ public class Usuarios {
         usuarios.add(usuario);
     }
 
+    /*
+
+    * Este método verifica que el usuario ingresado cumpla
+    * con la mayoria de edad, en caso de que no lo haga
+    * arroja una excepción de tipo UserEdadException
+    *
+    * */
     public void verificarEdad(Usuario usuario) throws UserException{
         if(usuario.edad < 18){
             throw new UserEdadException(usuario.edad.toString());
